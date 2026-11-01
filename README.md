@@ -2,7 +2,9 @@
 
 Exploratory analysis of the **336,776 flights** that departed from New York City airports (JFK, LGA, EWR) in 2013, combining flight, airline and hourly weather data to understand **when, where and why** flights get delayed.
 
-![Average departure delay by hour and weekday](figures/delays_by_hour.png)
+<p align="center">
+  <img src="figures/delays_by_hour.png" alt="Average departure delay by hour and weekday" width="450">
+</p>
 
 
 ## Key findings
