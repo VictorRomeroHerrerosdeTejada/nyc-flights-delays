@@ -39,8 +39,8 @@ def mean_by(df, by, col, min_n=1):
     sorted in descending order.
     """
     n = len(df[col])
-    groups = df.groupby(by).agg(n=(col, "size"), media=(col, "mean"))
-    return (groups[groups["n"] >= min_n]).sort_values(by="media", ascending=False)
+    groups = df.groupby(by).agg(n=(col, "size"), mean=(col, "mean"))
+    return (groups[groups["n"] >= min_n]).sort_values(by="mean", ascending=False)
 
 def plot_ranking(series, title, xlabel, highlight=3, ax=None):
     """
